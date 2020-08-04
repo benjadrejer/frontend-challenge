@@ -7,7 +7,8 @@
       "numberOfBedrooms": 5,
       "numberOfBathrooms": 3,
       "guests": 5,
-      "pricePerNight": 151.9
+      "pricePerNight": 151.9,
+      "image": "https://image.novasol.com/pic/1024/ita/201907181542/ita761_pool_01.jpg"
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "numberOfBedrooms": 4,
       "numberOfBathrooms": 3,
       "guests": 5,
-      "pricePerNight": 467.8
+      "pricePerNight": 467.8,
+      "image": "https://image.novasol.com/pic/1024/itf/201708081552/itf013_main_02.jpg"
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "numberOfBedrooms": 2,
       "numberOfBathrooms": 1,
       "guests": 5,
-      "pricePerNight": 489.0
+      "pricePerNight": 489.0,
+      "image": "https://image.novasol.com/pic/1024/isp/202007160924/isp211_pool_01.jpg"
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "numberOfBedrooms": 1,
       "numberOfBathrooms": 2,
       "guests": 5,
-      "pricePerNight": 453.5
+      "pricePerNight": 453.5,
+      "image": "https://image.novasol.com/pic/1024/s57/201703021413/s57080_main_01.jpg"
     },
     {
       "id": 5,
@@ -43,7 +47,8 @@
       "numberOfBedrooms": 4,
       "numberOfBathrooms": 2,
       "guests": 5,
-      "pricePerNight": 327.7
+      "pricePerNight": 327.7,
+      "image": "https://image.novasol.com/pic/1024/dbb/201812171026/dbb112_main_02.jpg"
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "numberOfBedrooms": 1,
       "numberOfBathrooms": 1,
       "guests": 5,
-      "pricePerNight": 182.5
+      "pricePerNight": 182.5,
+      "image": "https://image.novasol.com/pic/1024/n18/201808161046/n18735_main_01.jpg"
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "numberOfBedrooms": 4,
       "numberOfBathrooms": 3,
       "guests": 5,
-      "pricePerNight": 307.0
+      "pricePerNight": 307.0,
+      "image": "https://image.novasol.com/pic/1024/eas/201907291430/eas311_main_01.jpg"
     },
     {
       "id": 8,
@@ -70,7 +77,8 @@
       "numberOfBedrooms": 1,
       "numberOfBathrooms": 1,
       "guests": 5,
-      "pricePerNight": 369.6
+      "pricePerNight": 369.6,
+      "image": "https://image.novasol.com/pic/1024/eas/202006161517/eas407_pool_01.jpg"
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "numberOfBedrooms": 2,
       "numberOfBathrooms": 2,
       "guests": 5,
-      "pricePerNight": 271.2
+      "pricePerNight": 271.2,
+      "image": "https://image.novasol.com/pic/1024/eas/201909131013/eas170_main_01.jpg"
     },
     {
       "id": 10,
@@ -88,7 +97,8 @@
       "numberOfBedrooms": 2,
       "numberOfBathrooms": 3,
       "guests": 5,
-      "pricePerNight": 124.2
+      "pricePerNight": 124.2,
+      "image": "https://image.novasol.com/pic/1024/ean/201607121745/ean003_main_01.jpg"
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "numberOfBedrooms": 1,
       "numberOfBathrooms": 1,
       "guests": 5,
-      "pricePerNight": 223.2
+      "pricePerNight": 223.2,
+      "image": "https://image.novasol.com/pic/1024/ecc/202002131443/ecc843_main_01.jpg"
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "numberOfBedrooms": 1,
       "numberOfBathrooms": 1,
       "guests": 5,
-      "pricePerNight": 291.2
+      "pricePerNight": 291.2,
+      "image": "https://image.novasol.com/pic/1024/fpd/201809241309/fpd251_main_01.jpg"
     },
     {
       "id": 13,
@@ -115,7 +127,8 @@
       "numberOfBedrooms": 5,
       "numberOfBathrooms": 2,
       "guests": 5,
-      "pricePerNight": 207.7
+      "pricePerNight": 207.7,
+      "image": "https://image.novasol.com/pic/1024/isr/202007141558/isr308_pool_04.jpg"
     },
     {
       "id": 14,
@@ -124,7 +137,8 @@
       "numberOfBedrooms": 3,
       "numberOfBathrooms": 1,
       "guests": 5,
-      "pricePerNight": 216.6
+      "pricePerNight": 216.6,
+      "image": "https://image.novasol.com/pic/1024/isr/201905131303/isr206_pool_01.jpg"
     },
     {
       "id": 15,
@@ -133,7 +147,8 @@
       "numberOfBedrooms": 1,
       "numberOfBathrooms": 3,
       "guests": 5,
-      "pricePerNight": 268.3
+      "pricePerNight": 268.3,
+      "image": "https://image.novasol.com/pic/1024/iss/201901211554/iss190_main_02.jpg"
     }
   ]
 }
