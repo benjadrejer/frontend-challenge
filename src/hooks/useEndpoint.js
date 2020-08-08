@@ -3,17 +3,26 @@ import client from '../utils/client';
 
 const useEndpoint = (endpoint = null) => {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState({});
 
   useEffect(() => {
     if (endpoint) {
+      setLoading(true);
       client.get(endpoint)
-        .then(res => setData(res.data))
-        .catch(err => setError(err));
+        .then((res) => {
+          setLoading(false);
+          setData(res.data);
+        })
+        .catch((err) => {
+          setLoading(false);
+          setError(err);
+        });
     }
-  }, [endpoint]);
+  },
+  [endpoint]);
 
-  return [data, error];
+  return [data, loading, error];
 };
 
 export default useEndpoint;
