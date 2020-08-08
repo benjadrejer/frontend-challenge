@@ -1,0 +1,8 @@
+@import "../../globals/vars";
+
+.filter {
+  max-width: $gridMax;
+  margin: auto;
+  border: 1px solid $borderOutline;
+  padding: 10px 20px 25px;
+}
