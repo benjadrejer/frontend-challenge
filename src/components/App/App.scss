@@ -1,5 +1,14 @@
-@import "../globals/vars";
+@import "../../globals/vars";
 
 .novasol-properties {
+  box-sizing: border-box;
   font-size: $fontSize;
+
+  &__header {
+    text-align: center;
+  }
+
+  &__loading, &__error {
+    text-align: center;
+  }
 }

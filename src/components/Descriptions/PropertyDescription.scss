@@ -1,0 +1,23 @@
+@import '../../globals/vars';
+
+.property-description {
+  p {
+    margin: 0;
+  }
+
+  &__cta {
+    display: block;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: rgba($novasolBlue, 0.9);
+    color: $white;
+    transition: 0.2s;
+    border: none;
+    cursor: pointer;
+  }
+}

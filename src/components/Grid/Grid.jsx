@@ -1,28 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Listing from '../Listing/Listing';
-import PropertyDescription from '../Descriptions/PropertyDescription';
-
 import './Grid.scss';
 
-const Grid = ({ data }) => (
+const Grid = ({ children }) => (
   <div className="grid">
-    {data.map(entry => (
-      <Listing
-        imageUrl={entry.image}
-        key={entry.id}
-      >
-        <PropertyDescription
-          content={entry}
-        />
-      </Listing>
-    ))}
+    {children}
   </div>
 );
 
 Grid.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.object).isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 };
 
 export default Grid;

@@ -1,4 +1,4 @@
-@import '../globals/vars';
+@import '../../globals/vars';
 
 .listing {
   max-width: 100%;
@@ -8,6 +8,12 @@
   border: 1px solid $borderOutline;
   @media (min-width: 700px) {
     max-width: 300px;
+  }
+
+  &:hover {
+    [class*="cta"] {
+      background-color: $novasolBlue;
+    }
   }
 
   &__img-wrapper {
