@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 
 import './PropertyDescription.scss';
 
-const PropertyDescription = ({ content }) => (
+const PropertyDescription = memo(({ content }) => (
   <div className="property-description">
     <p>{`${content.city}, ${content.country}`}</p>
     <p>{`Bedrooms: ${content.numberOfBedrooms}`}</p>
@@ -17,7 +17,7 @@ const PropertyDescription = ({ content }) => (
       Read More
     </button>
   </div>
-);
+));
 
 PropertyDescription.propTypes = {
   content: PropTypes.shape({
