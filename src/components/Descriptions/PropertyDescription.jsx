@@ -5,13 +5,17 @@ import './PropertyDescription.scss';
 
 const PropertyDescription = ({ content }) => (
   <div className="property-description">
-    <p>{content.city}</p>
-    <p>{content.country}</p>
-    <p>{content.numberOfBedrooms}</p>
-    <p>{content.numberOfBathrooms}</p>
-    <p>{content.guests}</p>
-    <p>{content.pricePerNight}</p>
-    <a href="#">Read More</a> {/* Navigate user to the Property Page */}
+    <p>{`${content.city}, ${content.country}`}</p>
+    <p>{`Bedrooms: ${content.numberOfBedrooms}`}</p>
+    <p>{`Bathrooms: ${content.numberOfBathrooms}`}</p>
+    <p>{`Guests: ${content.guests}`}</p>
+    <p>{`Price pr. Night: ${content.pricePerNight}`}</p>
+    <button
+      type="button"
+      className="property-description__cta"
+    >
+      Read More
+    </button>
   </div>
 );
 
