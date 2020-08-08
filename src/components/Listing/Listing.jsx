@@ -1,12 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './Listing.scss';
+
 const Listing = ({ imageUrl, children }) => (
   <div className="listing">
-    <div className="listing_img_wrapper">
-      <img src={imageUrl} alt="Good property alternative text from the api" />
+    <div className="listing__img-wrapper">
+      <img
+        className="listing__img-wrapper__image"
+        src={imageUrl}
+        alt="Good property alternative text from the api"
+      />
     </div>
-    <div className="listing_description_wrapper">
+    <div className="listing__description-wrapper">
       {children}
     </div>
   </div>

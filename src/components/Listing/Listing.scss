@@ -1,3 +1,25 @@
+@import '../globals/vars';
+
 .listing {
-  
+  max-width: 100%;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid $borderOutline;
+  @media (min-width: 700px) {
+    max-width: 300px;
+  }
+
+  &__img-wrapper {
+    &__image {
+      max-width: 100%;
+      @media (min-width: 700px) {
+        max-width: 300px;
+      }
+    }
+  }
+
+  &__description-wrapper {
+    padding: 5px;
+  }
 }
