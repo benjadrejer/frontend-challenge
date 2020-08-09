@@ -5,6 +5,7 @@ import Listing from '../Listing/Listing';
 import PropertyDescriptionText from '../Descriptions/PropertyDescriptionText';
 // import PropertyDescriptionIcons from '../Descriptions/PropertyDescriptionIcons'; // <- Use this instead of PropertyDescriptionText for a different look
 import Filter from '../Filter/Filter';
+import Header from '../Header/Header';
 
 import './App.scss';
 
@@ -22,7 +23,6 @@ const App = () => {
   [data]);
 
   const handleFilter = (values) => {
-    console.log(values);
     setFiltered(data.filter((entry) => {
       const price = parseFloat(entry.pricePerNight);
       return price > values[0] && price < values[1];
@@ -57,12 +57,16 @@ const App = () => {
       <h1 className="novasol-properties__header">Novasol Property Listing</h1>
       {prices.length > 0
       && (
-      <Filter
-        max={Math.ceil(Math.max(...prices) / 100) * 100}
-        min={Math.floor(Math.min(...prices) / 100) * 100}
-        callback={handleFilter}
-        step={10}
-      />
+        <Header>
+          <span className="novasol-properties__count">{`Listings: ${filtered.length}`}</span>
+          <Filter
+            max={Math.ceil(Math.max(...prices) / 100) * 100}
+            min={Math.floor(Math.min(...prices) / 100) * 100}
+            callback={handleFilter}
+            step={10}
+            label="Filter by Price"
+          />
+        </Header>
       )
       }
       {component}
