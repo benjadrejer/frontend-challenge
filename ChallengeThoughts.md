@@ -34,5 +34,5 @@ I had 2 main considerations for this that I ultimately decided against, from the
 I decided to call it quits around the 6-hour mark, as I realize this is just a coding challenge and not actual production code. So this are the 'next steps' I did not get to:
 1. Making the header/filter sticky & disappearing - I like having the full screen space when scrolling down, but then getting the header back when scrolling up again, so the user doesn't have to return to the top to re-filter.
 2. BurgerMenu for mobile. Obviously the header/filter as it is right now is quite basic, and looks horrendous on mobile sizes. There would need to be a separate header for mobiles, most likely using the well-known BurgerMenu approach.
-3. Improving styling on the range slider. Right now it's just using the default rc-slider styling, which certainly works, but the defaults are almost never preferable.
+3. Improving styling on the range slider. Right now it's just using the default rc-slider styling, which certainly works, but could be better.
 4. If the Properties request fails, the App will simply show the error message. This should of course be something more elaborate in a production application, perhaps providing a list of alternatives or popular choices.

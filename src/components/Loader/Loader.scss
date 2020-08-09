@@ -1,0 +1,17 @@
+.loader {
+  svg {
+    -webkit-animation: spin 1s steps(12,end) infinite;
+    animation:spin 1s steps(12,end) infinite;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  
+  @-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @keyframes spin {
+    from {-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+    to {-webkit-transform:rotate(360deg);transform:rotate(360deg);}
+  }
+}
