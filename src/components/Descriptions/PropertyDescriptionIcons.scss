@@ -1,0 +1,35 @@
+.property-description-icons {
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__paragraph {
+    width: 33%;
+    margin: 20px 0;
+
+    &--big {
+      font-size: 1.3em;
+    }
+
+    &--full {
+      width: 100%;
+    }
+
+    &--no-margin {
+      margin: 0;
+    }
+  }
+
+  svg {
+    display: block;
+    margin: auto;
+    width: 35px;
+    height: 35px;
+  }
+
+  span {
+    display: block;
+    text-align: center;
+  }
+}

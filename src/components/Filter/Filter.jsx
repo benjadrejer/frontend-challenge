@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes, { number } from 'prop-types';
+import PropTypes from 'prop-types';
 import { Range } from 'rc-slider';
 
 import 'rc-slider/assets/index.css';
@@ -8,8 +8,6 @@ import './Filter.scss';
 const Filter = ({
   max, min, step, callback,
 }) => {
-  console.log('min: ', min);
-  console.log('max: ', max);
   const steps = Math.floor((max - min) / step);
 
   const handleMarks = () => {
