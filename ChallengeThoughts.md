@@ -12,12 +12,18 @@ Turns out the only real problem was eslint - I decided to remove the explicit in
 2. PropTypes is just a nice 'TypeScript light' for React that I appreciate and - while we do not use PropTypes at Unisport - I consider it best-practice.
 3. lazysizes for lazy-loading of the images and having a default while they load. The images in the mockData are quite heavy, which makes this even more important (although, yes, there are only 15).
 4. rc-slider for the price-filtering. It's a very popular React range-slider and has a fairly small footprint - and works quite well!
+5. Enzyme & Adapter for testing React components. I don't have a strong preference between Enzyme or a setup with React-Testing-Library, but from my experience Enzyme is generally a bit faster to do tests with.
 
 ## Structure
 I don't have a strong favorite between having a separate __tests__ directory, or adding the component test file in the folder with each component. I went with the separate directory in this case, consider it my weak preference.
 CSS I do like to place with the component to which they belong, and I went with a fairly simple SCSS structure, a somewhat 'manual' isolation approach, nesting all component-relevant CSS inside the className of the component root element. Do note that I am actually more of a fan of CSS modules (see considerations below), but this approach is what I am most used to and what we use at Unisport.
 Apart from that, for this small project, having a single folder for utilities and custom hooks seemed sensible, as well a globals like SCSS variables. 
 Svgs have been converted to React Components and are inside components/Svgs. I have nothing against using Svgs inside the CSS, but having them as components do have some advantages in terms of conditional rendering and on-the-fly changes.
+
+## Tests
+Admittedly the tests were the last part of the challenge I got done. I generally like the idea of tests, but I also am of the opinion that a lot of unit tests are indeed unnecessary.
+As this is a coding challenge, I added quite a few unit tests, anyway, despite them not really being needed.
+The tests for the App are essentially Integration tests, as the app doesn't do anything without the other components & hooks.
 
 ## Considerations
 I had 2 main considerations for this that I ultimately decided against, from the simple fact that I don't consider myself proficient enough in either of these things that it makes sense to 'showcase':
@@ -29,3 +35,4 @@ I decided to call it quits around the 6-hour mark, as I realize this is just a c
 1. Making the header/filter sticky & disappearing - I like having the full screen space when scrolling down, but then getting the header back when scrolling up again, so the user doesn't have to return to the top to re-filter.
 2. BurgerMenu for mobile. Obviously the header/filter as it is right now is quite basic, and looks horrendous on mobile sizes. There would need to be a separate header for mobiles, most likely using the well-known BurgerMenu approach.
 3. Improving styling on the range slider. Right now it's just using the default rc-slider styling, which certainly works, but the defaults are almost never preferable.
+4. If the Properties request fails, the App will simply show the error message. This should of course be something more elaborate in a production application, perhaps providing a list of alternatives or popular choices.

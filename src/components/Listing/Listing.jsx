@@ -5,7 +5,7 @@ import 'lazysizes';
 import './Listing.scss';
 
 const Listing = memo(({ imageUrl, link, children }) => (
-  <a href={link} className="listing"> {/* Navigate user to the Property Page */}
+  <a href={link} className="listing" data-test="listing"> {/* Navigate user to the Property Page */}
     <div className="listing__img-wrapper">
       {/* Preferably a very low-res version of the actual image in question instead of 'not found' */}
       <img

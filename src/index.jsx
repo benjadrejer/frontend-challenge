@@ -6,6 +6,6 @@ import 'normalize.css';
 import './index.scss';
 
 ReactDOM.render(
-  <App />,
+  <App endpoint="Properties" />,
   document.getElementById('root'),
 );
