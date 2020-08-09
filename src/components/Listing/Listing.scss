@@ -1,15 +1,11 @@
 @import '../../globals/vars';
 
 .listing {
-  max-width: 100%;
+  width: 300px;
   display: inline-block;
   margin: 10px;
   border-radius: 5px;
   border: 1px solid $borderOutline;
-  @media (min-width: 700px) {
-    max-width: 300px;
-    width: 300px;
-  }
 
   &:hover {
     [class*="cta"] {
@@ -20,7 +16,7 @@
   &__img-wrapper {
     &__image {
       height: 200px;
-      max-width: 100%;
+      width: 100%;
       @media (min-width: 700px) {
         max-width: 300px;
       }
