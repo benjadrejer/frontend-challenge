@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import useEndpoint from '../../hooks/useEndpoint';
 import Grid from '../Grid/Grid';
 import Listing from '../Listing/Listing';
-import PropertyDescription from '../Descriptions/PropertyDescription';
+import PropertyDescriptionText from '../Descriptions/PropertyDescriptionText';
+// import PropertyDescriptionIcons from '../Descriptions/PropertyDescriptionIcons'; // <- Use this instead of PropertyDescriptionText for a different look
 import Filter from '../Filter/Filter';
 
 import './App.scss';
@@ -42,7 +43,7 @@ const App = () => {
             link="#"
             key={entry.id}
           >
-            <PropertyDescription
+            <PropertyDescriptionText
               content={entry}
             />
           </Listing>
