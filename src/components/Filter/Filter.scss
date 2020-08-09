@@ -1,8 +1,15 @@
 @import "../../globals/vars";
 
 .filter {
-  max-width: $gridMax;
-  margin: auto;
-  border: 1px solid $borderOutline;
-  padding: 10px 20px 25px;
+  width: 100%;
+  max-width: 700px;
+  &__label {
+    display: inline-block;
+    margin: 0 15px 0 0;
+  }
+
+  .rc-slider {
+    max-width: 500px;
+    display: inline-block;
+  }
 }

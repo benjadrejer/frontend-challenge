@@ -6,7 +6,7 @@ import 'rc-slider/assets/index.css';
 import './Filter.scss';
 
 const Filter = ({
-  max, min, step, callback,
+  max, min, step, callback, label,
 }) => {
   const steps = Math.floor((max - min) / step);
 
@@ -20,7 +20,7 @@ const Filter = ({
 
   return (
     <div className="filter">
-      <h3>Filter by Price</h3>
+      {label && <p className="filter__label">{label}</p>}
       <Range
         min={min}
         max={max}
@@ -36,7 +36,12 @@ const Filter = ({
   );
 };
 
+Filter.defaultProps = {
+  label: null,
+};
+
 Filter.propTypes = {
+  label: PropTypes.string,
   max: PropTypes.number.isRequired,
   min: PropTypes.number.isRequired,
   step: PropTypes.number.isRequired,
