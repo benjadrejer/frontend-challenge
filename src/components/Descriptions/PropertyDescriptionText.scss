@@ -6,8 +6,12 @@
     max-width: 270px;
     margin: 0 auto;
     border-bottom: 1px solid $borderOutline;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     &--big {
       font-size: 1.3em;
@@ -31,6 +35,8 @@
     border-radius: 5px;
     background-color: rgba($novasolBlue, 0.9);
     color: $white;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
     border: none;
     cursor: pointer;

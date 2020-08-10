@@ -1,3 +1,7 @@
+## Thought on Project
+Read the "ChallengeThoughts.md" file to understand my through process. I've also added a few explanatory comments around the codebase.
+- Benjamin
+
 ## Background
 This is a coding challenge for a frontend developer position at Novasol. The task is for us to see your coding skills and logical problem solving. If you pass the test then you will be invited to a second interview which will be based on your solution and will have a more technical focus.
 

@@ -30,6 +30,9 @@ I had 2 main considerations for this that I ultimately decided against, from the
 1. Adding Typescript to the app. I absolutely love the idea of Typescript as it helps enforce the idea of reusability through interfaces, type declarations and generics. However, we don't use Typescript at Unisport, so my extent of knowledge of Typescript comes from home.
 2. CSS Modules (coupled with classNames npm package): This allows for strong isolation of components on the styling-level, and coupled with classNames package can create some really, truly reusable components that can easily be expanded upon. But again, it's not something I have a firm grasp of just yet, so I decided against going that route here.
 
+## Compatibility
+Despite adding IE 11 to the browserslist, it seems the app does not work in IE11. Having tried to just render a simple "Hello World" component and nothing else, and seeing the same errors, I can only assume that Create React App does not have the necessary polyfills. I don't want to spend any further time on this, but just be aware it is incompatible with IE11 at the moment.
+
 ## If I kept working on this ...
 I decided to call it quits around the 6-hour mark, as I realize this is just a coding challenge and not actual production code. So this are the 'next steps' I did not get to:
 1. Making the header/filter sticky & disappearing - I like having the full screen space when scrolling down, but then getting the header back when scrolling up again, so the user doesn't have to return to the top to re-filter.
