@@ -10,7 +10,7 @@ import App from '../App/App';
   Turns out Enzyme has an annoying semi-bug, warning about having to wrap state changes inside act(),
   despite Enzyme supposedly wrapping calls to .mount or .update in act already.
   It can be somewhat bypassed by waiting ever so slightly, which is what the waitForComponentToPaint function does.
-  If I knew this before I started these tests (which I didn't as I haven't actually used Enzym with Hooks before),
+  If I knew this before I started these tests (which I didn't as I haven't actually used Enzyme with Hooks before),
   I would have just kept to React-Testing-Library. Oh well!
 */
 

@@ -3,7 +3,8 @@
     -webkit-animation: spin 1s steps(12,end) infinite;
     animation:spin 1s steps(12,end) infinite;
     -webkit-transform-origin: center;
-            transform-origin: center;
+            -ms-transform-origin: center;
+        transform-origin: center;
   }
   
   @-webkit-keyframes spin {
